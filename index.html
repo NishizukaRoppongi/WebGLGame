@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1300 height=1600></canvas>
+      <canvas id="unity-canvas" width=650 height=800></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BT.loader.js";
+      var loaderUrl = buildUrl + "/Git.loader.js";
       var config = {
-        dataUrl: buildUrl + "/BT.data.br",
-        frameworkUrl: buildUrl + "/BT.framework.js.br",
-        codeUrl: buildUrl + "/BT.wasm.br",
+        dataUrl: buildUrl + "/Git.data.br",
+        frameworkUrl: buildUrl + "/Git.framework.js.br",
+        codeUrl: buildUrl + "/Git.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Usa",
@@ -82,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "1300px";
-        canvas.style.height = "1600px";
+        canvas.style.width = "650px";
+        canvas.style.height = "800px";
       }
       loadingBar.style.display = "block";
 
